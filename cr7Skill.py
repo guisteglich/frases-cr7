@@ -24,7 +24,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
         return is_request_type("LaunchRequest")(handler_input)
 
     def handle(self, handler_input):
-        speak_output = "Bem-vindo à minha skill de áudio. Diga 'Reproduzir' para ouvir o áudio, 'Reproduzir boa noite do CR7' para ouvir a saudação de boa noite ou 'Reproduzir bom dia do CR7' para ouvir a saudação de bom dia."
+        speak_output = "Bem-vindo à minha skill de áudio. Diga 'ativar frase cr7' para ouvir o áudio, 'Reproduzir boa noite do CR7' para ouvir a saudação de boa noite ou 'Reproduzir bom dia do CR7' para ouvir a saudação de bom dia."
         return (
             handler_input.response_builder
             .speak(speak_output)
